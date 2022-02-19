@@ -1,6 +1,6 @@
 # Budget-Tracker
 
-This budget tracker has online and offline capabilities. If a user loses connection while using the app, the data will be stored until connection is regained.
+This budget tracker has online and offline capabilities. If a user loses connection while using the app, the data will be stored until connection is restored.
 
 # User Story
 
