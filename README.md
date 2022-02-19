@@ -25,9 +25,9 @@ This budget tracker has online and offline capabilities. If a user loses connect
 
 # Budget Tracker Screenshots
 
-![Budget Tracker](LINK)
+![Budget Tracker](https://github.com/Ldeguzman9/Budget-Tracker/blob/main/public/assets/images/Screenshot%202022-02-18%20at%2010.14.24%20PM.png?raw=true)
 
 ## Links
 
-- [URL of the GitHub repository](LINK)
-- [URL of the Heroku repository](LINK)
+- [URL of the GitHub repository](https://github.com/Ldeguzman9/Budget-Tracker)
+- [Deployed Link](LINK)
