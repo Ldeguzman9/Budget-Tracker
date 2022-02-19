@@ -19,7 +19,6 @@ const FILES_TO_CACHE = [
   "/js/index.js",
 ];
 
-// We first install the service worker
 self.addEventListener("install", function (evt) {
   evt.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
@@ -30,7 +29,6 @@ self.addEventListener("install", function (evt) {
   self.skipWaiting();
 });
 
-// Remove data from the cache and use service worker
 self.addEventListener("activate", function (evt) {
   evt.waitUntil(
     caches.keys().then((keyList) => {
@@ -47,7 +45,6 @@ self.addEventListener("activate", function (evt) {
   self.clients.claim();
 });
 
-// Check the  fetch requests
 self.addEventListener("fetch", function (evt) {
   if (evt.request.url.includes("/api/")) {
     evt.respondWith(
@@ -62,7 +59,6 @@ self.addEventListener("fetch", function (evt) {
               return response;
             })
             .catch((err) => {
-              // We look at the cache when the network request fails.
               return cache.match(evt.request);
             });
         })
